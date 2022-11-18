@@ -1,0 +1,5 @@
+body {
+  background: palegreen;
+  display: grid;
+  place-items: center;
+}
