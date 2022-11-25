@@ -19,12 +19,12 @@ const server = http.createServer(function (req, res) {
     
     res.write(image)
     res.end()
-  } else if (req.url = '/style.css') {
+  } else if (req.url === '/style.css') {
     const css = readFileSync('./style.css')
     res.writeHead(200, { 'Content-Type': 'text/css' })
     res.write(css)
     res.end()
-  }else if (req.url = '/about.css') {
+  }else if (req.url === '/about.css') {
     const css = readFileSync('./about.css')
     res.writeHead(200, { 'Content-Type': 'text/css' })
     res.write(css)
